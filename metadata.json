@@ -1,0 +1,6 @@
+{
+  "name": "FitMaster AI & Algorithmic Gym Platform",
+  "description": "Plataforma integral de entrenamientos personalizados para gimnasios con soporte multi-rol, IA generativa y motor algorítmico local, modo enfoque activo y reportes avanzados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
