@@ -1,10 +1,12 @@
 {
-  "name": "react-example",
+  "name": "fitmaster-gym-platform",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Plataforma integral para gimnasios con rutinas biomecánicas por sexo, IA adaptativa, seguimiento de IMC/1RM y tienda flash de suplementos.",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
+    "dev:server": "tsx server.ts",
     "start": "node server.ts",
     "build": "vite build",
     "preview": "vite preview",
