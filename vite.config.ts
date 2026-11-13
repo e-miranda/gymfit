@@ -4,9 +4,9 @@ import path from 'path';
 import {defineConfig} from 'vite';
 import { apiPlugin } from './src/apiMiddleware';
 
-export default defineConfig(() => {
+export default defineConfig(({ command }) => {
   return {
-    base: './',
+    base: command === 'build' ? './' : '/',
     plugins: [react(), tailwindcss(), apiPlugin()],
     resolve: {
       alias: {
