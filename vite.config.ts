@@ -6,6 +6,7 @@ import { apiPlugin } from './src/apiMiddleware';
 
 export default defineConfig(() => {
   return {
+    base: './',
     plugins: [react(), tailwindcss(), apiPlugin()],
     resolve: {
       alias: {

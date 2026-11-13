@@ -75,8 +75,10 @@ Plataforma integral de gestión y entrenamiento inteligente para gimnasios con s
    git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
    git push -u origin main
    ```
-3. **GitHub Actions (CI):** El flujo `.github/workflows/ci.yml` ejecutará automáticamente `npm run lint` y `npm run build` en cada `push` o `pull_request` a `main`.
-4. **Despliegue externo (opcional):** Puedes conectar este repositorio a **Render**, **Railway**, **Fly.io** o **Google Cloud Run** usando:
+3. **GitHub Actions (CI) y GitHub Pages:**
+   - El flujo `.github/workflows/ci.yml` ejecutará automáticamente `npm run lint` y `npm run build` en cada `push` o `pull_request` a `main`.
+   - Para publicar la página web en **GitHub Pages**, ve a **Settings -> Pages** en tu repositorio de GitHub y en **Build and deployment -> Source** selecciona **GitHub Actions**. El flujo `.github/workflows/deploy-pages.yml` compilará y publicará automáticamente el sitio en `https://TU_USUARIO.github.io/TU_REPOSITORIO/` (con motor algorítmico local integrado en navegador).
+4. **Despliegue con servidor Node.js / IA Gemini (opcional):** Puedes conectar este repositorio a **Render**, **Railway**, **Fly.io** o **Google Cloud Run** usando:
    - **Build Command:** `npm install && npm run build`
    - **Start Command:** `NODE_ENV=production npm start`
    - **Variables de entorno:** `GEMINI_API_KEY` (si usas IA generativa) y `NODE_ENV=production`.
